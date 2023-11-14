@@ -1,0 +1,19 @@
+void readSettingsData() {
+  _font = box.read("font");
+}
+
+
+
+---------------//----------------------
+
+
+final box = GetStorage();
+
+double _font = 18;
+
+@override
+void initState() {
+  super.initState();
+
+  readSettingsData();
+}
